@@ -11,8 +11,6 @@ namespace Homework_20.Tests
             BasePage.OpenPage();
         }
 
-
-
         [TearDown]
         public void TearDown()
         { 

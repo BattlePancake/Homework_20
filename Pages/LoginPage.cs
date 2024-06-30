@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Homework_20.Factory;
+﻿using Homework_20.Factory;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 
@@ -14,7 +9,6 @@ namespace Homework_20.Pages
 
         private const string _userName = "standard_user";
         private const string _password = "secret_sauce";
-
 
         private static IWebElement userNameField => Driver.GetWait(10).Until(ExpectedConditions.ElementIsVisible(By.XPath("//*[@id='user-name']")));
         private static IWebElement passwordField => Driver.GetWait(10).Until(ExpectedConditions.ElementIsVisible(By.XPath("//*[@id='password']")));
